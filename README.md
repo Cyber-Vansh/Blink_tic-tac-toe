@@ -1,12 +1,34 @@
-# React + Vite
+# Blink Tac Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech Stack
+This game is built using React with plain JavaScript, and styled with simple CSS.
 
-Currently, two official plugins are available:
+## Emoji Categories
+Players can choose from fun emoji categories like:
+- Animals (🐶, 🐱, 🐵, 🐰)
+- Food (🍕, 🍟, 🍔, 🍩)
+- Sports (⚽, 🏀, 🏈, 🎾)
+- Faces (😀, 😎, 🥳, 🤖)
+- Fruits (🍎, 🍌, 🍓, 🍇)
+- Nature (🌳, 🌸, 🌞, 🌈)
+- Vehicles (🚗, 🚲, ✈️, 🚀)
+- Music (🎵, 🎸, 🎹, 🎤)
+- Flags (🇮🇳, 🇵🇰, 🇱🇰, 🇧🇹)
+- Space (🌌, 🌠, 🚀, 🪐)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How the “Vanishing” Feature Works
+Each player can only have 3 emojis on the board at a time. The game tracks each player’s moves in an array. When a player places a new emoji while already having 3 on the board, the oldest emoji (the first move in their array) is removed from the board and their moves list. This makes the oldest emoji "vanish," keeping the gameplay dynamic and fast-paced.
 
-## Expanding the ESLint configuration
+## Power-Up Features
+The game includes special power-ups to add strategy and excitement:
+- **Swap:** Swap one of your opponent's emojis with an empty cell on the board.
+- **Double Move:** Make two moves consecutively in your turn.
+- **Block:** Block an empty cell to prevent either player from placing an emoji there for the rest of the game.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Power-ups are randomly assigned at the start of each player’s turn and can be activated strategically.
+
+## What I’d Improve With More Time
+- Add an AI opponent for solo play.
+- Polish the UI with animations, sounds, and better responsiveness.
+- Enhance accessibility for keyboard navigation and screen readers.
+- Add more diverse and customizable emoji categories and power-ups.

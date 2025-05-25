@@ -1,0 +1,23 @@
+.help {
+    margin-top: 2rem;
+    background-color: #2c2c44cc;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(30, 30, 47, 0.8);
+    text-align: left;
+    color: #ccc;
+  }
+  
+  .help h2 {
+    margin-bottom: 0.5rem;
+    color: #ddd;
+  }
+  
+  .help ul {
+    padding-left: 1.2rem;
+  }
+  
+  .help li {
+    margin-bottom: 0.5rem;
+  }
+  

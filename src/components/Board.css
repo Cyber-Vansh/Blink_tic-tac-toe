@@ -1,0 +1,15 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+  
+  @media (max-width: 500px) {
+    .board {
+      grid-template-columns: repeat(3, 70px);
+      grid-gap: 6px;
+    }
+  }
+  

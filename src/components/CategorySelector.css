@@ -1,0 +1,65 @@
+.setup {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.player-select h2 {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.categories button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #888;
+  border-radius: 8px;
+  background-color: #2c2c3e;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.categories button.selected {
+  background-color: #4a90e2;
+  color: #fff;
+  border-color: #4a90e2;
+}
+
+.categories button:hover:not(:disabled) {
+  background-color: #3a3a5a;
+}
+
+.start-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.start-btn:hover {
+  background-color: #356ac3;
+}
+
+@media (max-width: 500px) {
+  .categories button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .start-btn {
+    font-size: 1rem;
+  }
+}
